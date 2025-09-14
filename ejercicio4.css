@@ -67,7 +67,7 @@ body.theme-dark{
   transform: translateY(-1px);
 }
 
-/* ===== Cards / Secciones ===== */
+/*secciones*/
 main{ width:min(1100px, 92%); margin: 18px auto 40px; }
 
 .card{
@@ -91,7 +91,7 @@ main{ width:min(1100px, 92%); margin: 18px auto 40px; }
 .lead{ font-size: 1.06rem; }
 .muted{ color: #bfbfbf; font-size: .95em; }
 
-/* ===== Personajes ===== */
+/*personajes*/
 .character{
   display:grid; gap:16px;
   grid-template-columns: 110px 1fr;
@@ -120,7 +120,7 @@ main{ width:min(1100px, 92%); margin: 18px auto 40px; }
   border:1px solid rgba(0,0,0,.25);
 }
 
-/* ===== Galería ===== */
+/*galería*/
 .gallery{
   display:grid; gap:14px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -140,7 +140,7 @@ main{ width:min(1100px, 92%); margin: 18px auto 40px; }
 }
 .shot figcaption{ margin-top:6px; color:#d9d9d9; font-size:.95rem; }
 
-/* ===== Tabla de datos ===== */
+/*tabla*/
 .info{
   width:100%; border-collapse: collapse;
   background: rgba(0,0,0,.1);
@@ -156,7 +156,6 @@ main{ width:min(1100px, 92%); margin: 18px auto 40px; }
   color:#fff; font-weight:700;
 }
 
-/* ===== util ===== */
 .to-top{ text-align:center; margin: 10px 0 0; }
 .to-top a{
   color: var(--gold);
@@ -169,8 +168,9 @@ main{ width:min(1100px, 92%); margin: 18px auto 40px; }
   color:#bfbfbf;
 }
 
-/* Responsive: personajes en columna en pantallas pequeñas */
+/*Responsive*/
 @media (max-width: 560px){
   .character{ grid-template-columns: 1fr; }
   .char-media img{ width:100%; height:180px; }
 }
+
