@@ -1,0 +1,140 @@
+:root {
+  --bg: #0d1117;
+  --card: hsl(0, 21%, 11%);
+  --brand: #00add4;
+  --text: #e6edf3;
+  --muted: #8b949e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site {
+  background: var(--card);
+  padding: 1rem;
+  border-bottom: 1px solid var(--muted);
+}
+
+.brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: var(--brand);
+  margin-bottom: 0.5rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--brand);
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover {
+  background: var(--brand);
+  color: #000;
+}
+
+/* SECCIONES */
+.card {
+  background: var(--card);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 62, 78, 0.9);
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--brand);
+  border-bottom: 2px solid var(--brand);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avatar {
+  background: var(--brand);
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 90px;   /* mismo tamaño que el diseño anterior */
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background: #00acc1;
+}
+
+/* GUSTOS */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* CITAS */
+blockquote.quote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid var(--brand);
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 2rem 0;
+}
